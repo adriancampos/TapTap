@@ -114,6 +114,10 @@ class TapAccessibilityService : AccessibilityService(),
                     this,
                     GLOBAL_ACTION_NOTIFICATIONS
                 )
+                TapAction.POWER_DIALOG -> AccessibilityServiceGlobalAction(
+                    this,
+                    GLOBAL_ACTION_POWER_DIALOG
+                )
                 TapAction.SPLIT_SCREEN -> AccessibilityServiceGlobalAction(
                     this,
                     GLOBAL_ACTION_TOGGLE_SPLIT_SCREEN
